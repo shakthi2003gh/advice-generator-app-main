@@ -1,5 +1,28 @@
 @import url(/styles/normalize.css);
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
 
 html {
   min-width: 375px;
+}
+
+/* >Color palette */
+:root {
+  --color-primary: hsl(150, 100%, 66%);
+  --color-secondary: hsl(193, 38%, 86%);
+  --color-button-: hsl(218, 23%, 16%);
+
+  --bg-card: hsl(217, 19%, 38%);
+  --bg: hsl(217, 19%, 24%);
+}
+
+/* >Typography */
+body {
+  font-family: "Manrope", sans-serif;
+  color: var(--color-primary);
+  background-color: var(--bg);
+}
+
+q {
+  font-size: 28px;
+  color: var(--color-secondary);
 }

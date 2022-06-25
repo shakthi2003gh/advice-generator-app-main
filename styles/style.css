@@ -1,0 +1,5 @@
+@import url(/styles/normalize.css);
+
+html {
+  min-width: 375px;
+}

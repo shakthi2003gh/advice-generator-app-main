@@ -11,18 +11,73 @@ html {
   --color-secondary: hsl(193, 38%, 86%);
   --color-button-: hsl(218, 23%, 16%);
 
-  --bg-card: hsl(217, 19%, 38%);
+  --bg-card: hsla(216, 19%, 38%, 0.23);
   --bg: hsl(217, 19%, 24%);
 }
 
 /* >Typography */
 body {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
   font-family: "Manrope", sans-serif;
   color: var(--color-primary);
   background-color: var(--bg);
 }
 
+h1 {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5ch;
+}
+
 q {
   font-size: 28px;
+  line-height: 1.9ch;
   color: var(--color-secondary);
+}
+
+/* >main */
+main {
+  position: relative;
+  display: grid;
+  gap: 1.4rem;
+  text-align: center;
+  max-width: 470px;
+  padding: 2rem;
+  padding-bottom: 3.5rem;
+  margin: 0 1.5rem;
+  box-shadow: 0 6px 49px -23px black, 0 0 0 100vmax hsl(0deg 0% 0% / 33%);
+  border-radius: 10px;
+  background-color: var(--bg-card);
+}
+
+.border {
+  width: 100%;
+}
+
+button {
+  position: absolute;
+  display: grid;
+  place-content: center;
+  bottom: 0;
+  left: 50%;
+  width: 50px;
+  height: 50px;
+  padding: 0.8rem 0.9rem;
+  border: none;
+  border-radius: 100px;
+  transform: translate(-50%, 50%);
+  background-color: var(--color-primary);
+}
+
+button:hover,
+button:focus {
+  cursor: pointer;
+  outline: none;
+  box-shadow: 0 0 25px 0 var(--color-primary);
+}
+
+button img {
+  transform: scale(0.9);
 }
